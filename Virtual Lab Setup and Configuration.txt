@@ -1,0 +1,44 @@
+6-10-2025 - Windows Server 2016
+- Set up and specification configs for Windows Server 2016 on VMWARE Workstation.
+- Installation of Windows Server 2016 virtual machine.
+- CPU:1.8GHz, RAM:5Gb, ROM:60Gb.
+- Change server name (Hostname) to - WS16
+- Username - administrator
+- Password - *********
+- Allow server to run on best performance to enhance performance.
+- Installed Active Directory Domain Services on WS16
+- Made WS16 a domain controller
+- Created a new forest (stcsolutions9.com - not routable)
+- Used AD Users and computers to manage objects (users, computers, etc)
+- Enabled recycle bin in AD Administrative center to be able to restore deleted items
+- Used Copy function (copied administrator) to create a new user (Helpdesk) to ease user account creation
+- Helpdesk has all permissions as administrator
+- IP Address - private/static - 10.1.10.2/8
+- Default Gateway - 10.1.10.1
+- DNS Server - 10.1.10.2, 10.1.10.1
+- Some Commands used; 
+	ipconfig
+	net ....
+	net use; to view/manage shared resources
+	net user; to view/manage users
+
+
+6-10-2025 - Windows 10
+- Set up and specification configs for Windows 10 on VMWARE Workstation.
+- Installation of Windows 10 virtual machine.
+- CPU:1.8GHz, RAM:5Gb, ROM:50Gb.
+- Created two accounts on the VM
+- Username - User
+- Password -
+- Enabled Admin account in computer management
+- Username - administrator
+- Password - *********
+- Installed some RSAT tools (Remote Server Administration Tools) on win10 to allow management of some server services from this machine.
+	More like installing AD on a non-windows server OS.
+	RSATs are installed through settings -> system -> optional features -> add new feature
+- Change server name (Hostname) to - WIN10-PC
+- IP Address - private/static - 10.1.10.3/8
+- Default Gateway - 10.1.10.2
+- DNS Server - 10.1.10.2, 10.1.10.1
+- Added WIN10-PC computer to the domain (stcsolutions9.com), confirmed that it was added under computers in AD users and computers.
+- Successfully logged on to WIN10-PC using Helpdesk and Administrator domain user accounts
