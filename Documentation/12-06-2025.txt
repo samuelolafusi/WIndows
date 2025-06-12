@@ -5,8 +5,8 @@ LAT-3400
 - Change server name (Hostname) to - LAT-3400
 - IP Address - private/static - 10.0.0.4/8
 	ifconfig ens33 10.0.0.4 netmask 255.0.0.0
-- Default Gateway - 10.0.0.2
-- DNS Server - 10.0.0.2, 10.0.0.1
+- Default Gateway -
+- DNS Server - 10.0.0.2
 
 PC2
 - Set up and specification configs for PC2 on VMWARE Workstation.
@@ -14,8 +14,8 @@ PC2
 - CPU:1.8GHz, RAM:5Gb, ROM:50Gb, Windows 10 Pro
 - Change computer name (Hostname) to - PC2
 - IP Address - private/static - 10.0.0.5/8
-- Default Gateway - 10.0.0.2
-- DNS Server - 10.0.0.2, 10.0.0.1
+- Default Gateway - 
+- DNS Server - 10.0.0.2
 - Enabled Admin account in computer management
 - Username - administrator
 - Password - 
