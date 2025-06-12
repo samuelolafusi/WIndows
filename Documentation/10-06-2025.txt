@@ -15,8 +15,8 @@ WS16
 - Used Copy function (copied administrator) to create a new user (Helpdesk) to ease user account creation
 - Helpdesk has all permissions as administrator
 - IP Address - private/static - 10.0.0.2/8
-- Default Gateway - 10.0.0.1
-- DNS Server - 10.0.0.2, 10.1.0.1
+- Default Gateway -
+- DNS Server - 10.0.0.2
 - Some Commands used; 
 	ipconfig
 	net ....
@@ -36,7 +36,7 @@ PC1
 	RSATs are installed through settings -> system -> optional features -> add new feature
 - Change computer name (Hostname) to - PC1
 - IP Address - private/static - 10.0.0.3/8
-- Default Gateway - 10.0.0.2
-- DNS Server - 10.0.0.2, 10.0.0.1
+- Default Gateway -
+- DNS Server - 10.0.0.2
 - Added PC1 computer to the domain (stcsolutions9.com), confirmed that it was added under computers in AD users and computers.
 - Successfully logged on to PC1 using Helpdesk and Administrator domain user accounts
