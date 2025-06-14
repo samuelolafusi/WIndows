@@ -1,0 +1,47 @@
+- gpresult - to display GPO information for objects.
+
+- Simulated a locked user (Mary) account, and unlocked the user account in AD users and computers by;
+	- right click on the domain (stcsolutions9.com) and click "Find" to find the user (Mary in this case) 
+	- right-click on the user "Mary" under search results and click "Properties"
+	- click on the "account" tab, check "unlock account", and click "apply".
+
+- Simulated a disabled account, and enabled it back (also resetting password) in AD users and computers by;
+	- Find the user account in the entire directory
+	- right-click on the user, click "enable account" (to enable account), click "reset password" to reset the user's password (check "user must change password at next logon")
+	- or right-click on the user and click "Properties"
+	- click on the "account" tab, scroll down to "account options", uncheck "account is disabled", and click "apply".
+
+- Simulated an expired (Mary) account, and unlocked the user account in AD users and computers by;
+	- Find Mary under the domain
+	- open Mary's "properties"
+	- click on the "account" tab, scroll to "account expires", check "never" and click "apply".
+
+- Simulated a workstation trust relationship issue by disabling a computer.
+- Issue was resolved in AD users and computers by;
+	- Find the computer with its name in "computers" in the "entire directory"
+	- right click on the computer and click "Properties"
+	- click on "enable account"
+
+- Simulated a workstation trust relationship (computer is deleted/fallen off the domain).
+- Issue was resolved by;
+	- Log in on that particular PC with a domain user account to confirm the issue (note, previous signed-in domain user accounts will be signed in bcos the computer has saved the user's information locally.
+	- Sign out of the domain account and log in with the PC local admin account.
+	- Remove the PC from the domain and add it to a WORKGROUP, the computer will restart.
+	- Add it back to the domain.
+
+PC3
+- Set up and specify configurations for PC3 on VMware Workstation.
+- Installation of PC3 virtual machine as PC3.
+- CPU:1.8GHz, RAM:5Gb, ROM:60Gb, Windows 11 Pro
+- Bypassed the internet-required setup with cmd (shift + (fn+) f10), type oobe\bypassnro
+- Created a local user account
+- Change computer name (Hostname) to - PC3
+- IP Address - private/static - 10.0.0.6/8
+- Default Gateway - 
+- DNS Server - 10.0.0.2
+- Enabled Admin account in computer management
+- Username - administrator
+- Password - 
+- Signed in as local admin, and deleted local user account.
+- Created a new user account (Favour) by copying Mary's account in AD users and computers.
+- Successfully logged on to PC3 using Favour's user account.
