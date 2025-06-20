@@ -1,0 +1,8 @@
+GPO, RSOPs
+- Created a New group policy(NEW_Policy) under Group Policy Objects in the Group Policy Management app in AD
+- added the HR OU as a delegate to read (permission) the policy - all HR users will be able to only read the policy
+- Linked NEW_Policy to the HR OU
+- Right click on the new policy under HR, enable "enforced", click edit to edit the policy
+- Tried so many policies under user configuration. examined the effects of the policies on the user 
+	- use the command; <gpupdate /force> to effect the policies on the user immediately
+- Generated RSoP report for users in AD users and computers
