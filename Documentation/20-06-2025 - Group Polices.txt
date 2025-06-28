@@ -14,4 +14,4 @@ GPO, RSOPs
 
 	- Lessons: A group policy object must be linked to an OU, and the intended objects must belong to that OU. Also, it is better to add its intended objects(users/groups/computers) under security filtering/delegation
 
-- Generate RSoP report for users and computers in AD users and computers and with cmd commands (gpresult).
+- Generated RSoP report for users and computers in AD users and computers and also with cmd commands (gpresult).
