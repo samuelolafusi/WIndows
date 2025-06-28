@@ -1,0 +1,23 @@
+PRINTING SERVICE on the SERVER
+- Added a new role/features via the server manager app.
+- This new role is for printing; it is print and document services.
+- Only the role service (print server) was selected.
+
+- After the installation of the print server, print management under tools in the server manager app was opened.
+- A new printer was installed.
+	- Expand print servers, click on printers, right click on printers, and click "add a new printer."
+	- "Add a new printer using an existing port", "LPT1: Printer port" was selected.
+	- "Install new driver" was selected
+	- Follow the steps
+	- Printer was installed.
+
+- The newly installed printer appeared; it was managed by right-clicking on it and selecting properties
+- Under the sharing tab, "render print jobs on client's computer" and "list on directory" were checked.
+- Under the security tab, "everyone" as a principal was removed, and the HR security group was added with the permission to only print.
+
+- Ideally, a static IP should be configured on the printer, but bcos this was a simulation, this was not done.
+
+- On the PCs where members of the HR security group belong, the printers were added.
+	- Go to Control Panel, Hardware and Sound, Devices and Printers, add a new printer, and the new printer setup on the server should appear.
+
+- Multiple printers were added and security was tested on the user level.
