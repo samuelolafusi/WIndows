@@ -1,0 +1,34 @@
+--- START LICENSE ---
+PExpY2Vuc2UgVmVyc2lvbj0iMi4wIiBJRD0iNDcx
+NmU0NmUtNzgyMS00ZGFjLWI0N2ItMGYxOTU3YWRm
+OTViIiBDdXN0b21lcklEPSJiNDA3Y2Y0ZS03YTIy
+LTRhZTQtYjJkOC1kNmQ1ZjRkZTA1MDYiIE5hbWU9
+IlBEUSBJbnZlbnRvcnkiIENvZGU9IlBEUUludmVu
+dG9yeSIgQ291bnQ9IjEwIiBNb2RlPSJFbnRlcnBy
+aXNlIiBUeXBlPSJGdWxsIiBFLU1haWw9InN0Y21h
+bGxuZ0BnbWFpbC5jb20iIEV4cGlyZXM9IjIwMjUt
+MDctMTEiIFNpZ25hdHVyZT0iZmxSOEM3SDBFWUVV
+eGE3V3hXejAyQXRSZkJCR0UwMTNNaGxaWlJqUnE1
+NGZrbkIzYmlDWEZXMnlzTWRwbUtuM3g4Y3AzT08x
+RGYzN3YxR0p2OXRzSDlLU2QrSU5iaHJjU1NnVUVQ
+VzY5Um9UUmVFSTBmc0pwd1dCUnBQOHdPSUVYREZ0
+ZnZzeDB1VWxJdHFWcUpSR3dzdXZWVXIxdCs3cFp3
+Nlppa0lVNlUwPSIgLz4=
+--- END LICENSE ---
+
+PDQ - Inventory - Gives lots of information about a computer
+
+- Got familiar with the software.
+
+Some features of PDQ Inventory
+- Shows a list of domain computers and allows remote access to a computer.
+- shows apps installed on workstations, and shows Windows updates installed on workstations.
+
+- Installed PDQ inventory as a central server on WS16
+- Manually added and synced computers from AD
+- Managed multiple workstations directly from PDQ inventory.
+- Ran commands on workstations from this powerful app.
+- Generated several reports for target workstations using the run report tool (application, services, hardware)
+- shutdown, restarted computers on the domain from this app
+
+There are lots more on the app.
