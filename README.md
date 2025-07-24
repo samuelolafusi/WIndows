@@ -4,6 +4,7 @@ Networking.<br>
 Active Directory, Domain management, User, Groups (security and distribution), GPOs.<br>
 DNS, DHCP Services on Server 2016.<br>
 SMB Share, Drive Mapping.<br>
+Ticketing Systems, Inventory and Deployment.<br>
 Exchange Server 2016, User mailbox, Distribution Group mailbox, shared mailbox, contact (user, mail), Resources.<br>
 Microsoft 365 @ Exchange Admin on the cloud (Users, all types groups, guest user, resourses, shared mailboxes, contacts).<br>
 Microsoft Graph Powershell (prerequisites, module installation, delegated signin, session management, signout).<br>
