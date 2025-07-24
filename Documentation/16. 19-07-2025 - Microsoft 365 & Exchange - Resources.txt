@@ -1,0 +1,18 @@
+- Learnt about exchange resources, room, and equipment mailboxes. 
+- Once a mailbox is created for an Exchange resource, that resource can be booked/reserved.
+
+
+- I created a mailbox for three guest rooms in my home, specifying the address, capacity, and other personal information.
+	main guest room - maingr@stcsolution9.com
+	corner guest room - cornergr@stcsolutions9.com
+	back guest room - backgr@stcsolutions9.com
+
+	- I added two booking delegates from IT to accept or decline booking requests
+	- I managed booking options, allowing meetings only during working hours, and also set a reply (about approval or denial) to be sent to the organizer after booking.
+	- I set up a mail tip reiterating the reply stated in the booking options
+	- I delegated the mailbox to users in the IT team, granting them full access.
+
+- I also created an equipment mailbox for a hallway phone, specifying settings in booking delegates, booking options, and mailbox delegates
+	hallwayphone@stcolutions9.com
+
+- Other settings for these resources can be configured on their respective calendars.

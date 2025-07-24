@@ -1,0 +1,27 @@
+- Created user mailboxes and tried several features like;
+
+	- Set mailbox usage to 1gb for all users
+
+	- learning about hiding or showing a mail address on GAL - global address list, this can be used if a user is no more with the organization 
+
+	- learnt how to add an email address type (smtp, sip) linked with the actual/original user mail
+
+	- Practised mobile device management and ActiveSync for mobile by blocking access, allowing access and deleting the device.
+
+	- Managed email app by disabling and enabling OWA, Outlook desktop, .
+
+	- Learnt about sharing, role assignment, and retention policy - how long an email should live on clients' devices.
+
+	- Set a restriction on message send and receive size to 20MB
+
+	- Practiced mail forwarding (under mail flow) by selecting other users who should receive an email sent to a specific user. this is useful when a person leaves/is transferred/out of office, and issues have to be taken care of. Exchange will forward any email to this specific person to other users set under email forwarding under this specific person's mailbox.
+
+	Also, under mail forwarding, the number of CCs and BCCs can be edited.
+
+	- added users who can send/cannot send messages to a specific user through the message delivery restriction option. it can also be interpreted as a setting where exchange allows mails to be accepted/rejected by a user's mailbox
+ 
+	- Delegation allows another user to take full access of another mailbox, send on behalf of a mailbox, and send as a mailbox. tested this with full access on outlook web
+		- On Outlook Web, go to the top right corner, click on your initials, click open another mailbox, input the delegated mailbox address
+		- In Outlook, it should automatically add itself.
+
+	- Set up mail tip for users

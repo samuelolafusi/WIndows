@@ -1,0 +1,32 @@
+Microsoft 365 user management (combines features in AD and Exchange)
+
+- Added a user for HR using the "add a user feature", specifying user information, licenses, and role.
+
+- Created user template (like the copy feature in AD) to ease user account creation.
+	- entered basic information, licenses, roles, and profile information.
+	- Added users with the template.
+
+- User licenses, devices, and M365 activations
+
+- User roles
+
+- User Mail settings
+
+- Added user to groups
+
+- Blocking users in case of threats, offboarding, or other reasons
+
+
+Microsoft 365 Contact Management (like Mail Contact or mail user in Exchange)
+
+- Used to add people's details that are outside the organization, contact information. Here, the user is not part of the organization.
+
+- I added a contact, inputting all details, including personal information, and mail tip information.
+- contact reflected in M365 and the Exchange Admin Center as a mail contact.
+
+
+Guest User
+
+- successfully Added a guest user on Entra ID by sending an invitation, specifying user details, invitation message, group, and roles.
+- This was confirmed in the M365 admin center as a guest user and in Exchange as a guest mail user
+- added guest to groups

@@ -1,0 +1,17 @@
+Spiceworks Cloud Helpdesk Solution was used for this practice.
+
+Opening a ticket
+- Created Tickets, assigned them to the appropriate persons.
+- Selected a corresponding priority based on user needs and severity of issue.
+- Selected the appropriate category for this ticket.
+- Attached the affected device to the ticket using the "related devices" feature.
+
+While fixing the issue
+- Changed the ticket status to "waiting"
+- took notes for a knowledge base purpose
+- added CC users to carry them along.
+- Used remote tools (remote assist), AD, commands, GPM (viewed policies that might relate to the issue) to solve issues raised.
+
+Closing tickets
+- Closed the ticket under status
+- Created articles about all issues in the knowledge base, reporting all steps taken, and how I solved the problem.

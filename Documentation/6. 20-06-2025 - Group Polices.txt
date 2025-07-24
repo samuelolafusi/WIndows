@@ -1,0 +1,17 @@
+GPO, RSOPs
+- Created a New group policy(HR policy) under Group Policy Objects in the Group Policy Management app in AD
+- added the HR OU as a delegate to read (permission) the policy - all HR users will be able only to read the policy
+- Linked NEW_Policy to the HR OU
+- Right click on the new policy under HR, enable "enforced", click edit to edit the policy
+
+- Tried so many policies under user and computer configuration. examined the effects of the policies on the user
+	- Encountered an error when trying to manage PC2 and PC3 from AD Users and Computers, resolved it by creating a computer config firewall rule
+	- There are two ways to fix the issue: 1. Create a computer configuration Windows firewall group policy, or 2. Allow the inbound predefined services on each PC.
+	- Created another policy called: PC policy for a computer config firewall policy for remote management of computers (the rules are: COM+ Network access, all rules in the Remote event log management group)
+		computer config -> Windows settings -> security settings -> Windows Firewall with Advanced Security -> Inbound Rules -> new rule -> predefined -> COM+ Network access -> allow the coonection -> finish
+	- used the command <gpupdate /force> to effect the user config policies on the user immediately
+	- Restarted pc for computer configs policies to take effect
+
+	- Lessons: A group policy object must be linked to an OU, and the intended objects must belong to that OU. Also, it is better to add its intended objects(users/groups/computers) under security filtering/delegation
+
+- Generated RSoP report for users and computers in AD users and computers and also with cmd commands (gpresult).
