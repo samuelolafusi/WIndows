@@ -1,8 +1,0 @@
-Learnt and practiced admin roles (role groups), user roles (role assignment policy), and Outlook on the web policies in exchange.
-
-- Created two role groups for the two users in IT, specifying roles and permissions
-- Added the users to their respective role groups.
-
-- Created a role assignment policy for end-users, allowing them to change contact, personal, text message, voicemail, and mailbox delegation information.
-
-- Outlook on the web mailbox policy was created to set permissions/restrictions on what users can do on the Outlook on the web app.
