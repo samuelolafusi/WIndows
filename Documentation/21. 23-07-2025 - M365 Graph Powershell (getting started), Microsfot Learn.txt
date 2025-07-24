@@ -1,0 +1,46 @@
+Microsoft Graph PowerShell SDK for Microsoft 365 @ https://learn.microsoft.com/en-us/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell?view=o365-worldwide
+
+Some advantages of PowerShell for M365
+- Reveal additional information that you can't see in the Microsoft 365 admin center
+- Configure features and settings only possible with PowerShell
+- Do bulk operations
+- Filter data
+- Print or save data
+- Manage across services
+
+- Windows PowerShell (with prerequisites, see them online) or PowerShell 7 could be used
+
+- Installed the PowerShellGet module on Windows PowerShell - a prerequisite. (-force is to force the installation of an updated version side by side with an old version).
+	command: install-module -force powershellget
+
+- The execution policy on PowerShell must be set to remote signed. I used the command below to verify this
+	command: get-executionpolicy
+
+- To set the execution policy to remote signed, run;
+	command: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+- I connected to my M365 organization account using the Microsoft Graph PowerShell SDK
+- These are one-time installations; however, updates need to be done.
+
+	- installing the Microsoft Graph PowerShell SDK (Microsoft.graph)
+		command: Install-Module Microsoft.Graph -Scope CurrentUser
+
+	- installing the Microsoft Graph PowerShell SDK (microsoft.graph.beta)
+		command: install-module Microsoft.graph.beta
+
+- I verified the installed graph modules;
+	command: Get-InstalledModule Microsoft.Graph
+
+- to update the module
+	command: Update-Module Microsoft.Graph
+
+Authentication @ https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0
+
+- signing in to my M365 account, specifying permission scopes;
+	command: Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All"
+
+- I checked the details about my current signin session with;
+	command; get-mgcontext
+
+- I sign out of the Graph PowerShell with;
+	command: Disconnect-MgGraph
