@@ -7,6 +7,6 @@ SMB Share, Drive Mapping.<br>
 Ticketing Systems, Inventory and Deployment.<br>
 Exchange Server 2016, User mailbox, Distribution Group mailbox, shared mailbox, contact (user, mail), Resources.<br>
 Microsoft 365 @ Exchange Admin on the cloud (Users, all types groups, guest user, resourses, shared mailboxes, contacts).<br>
-Microsoft Graph Powershell (prerequisites, module installation, delegated signin, session management, signout).<br>
+Microsoft Graph Powershell.<br>
 
 I will keep updating this readme file, as i work more.<br>
