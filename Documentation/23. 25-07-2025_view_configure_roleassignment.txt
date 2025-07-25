@@ -1,0 +1,62 @@
+Viewing users on Graph PowerShell @ https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide
+
+- I used my login script to login, granting readwrite scopes for users, groups, organization, and directory
+- the scope user.readwrite.all works for this.
+
+- I checked all my users with; (the pipe allows to fetch only the stated properties)
+	command: get-mguser -all | select displayname,id,userprincipalname
+	command: get-mguser -all | select * (the * is a wildcard character representing properties)
+
+With *, you can view all possible properties that can be set for a user and provide them in a CSV file for bulk operation on users.
+
+- I checked a specific user specifying their sign-in name/user principal name (UPN) (name@domain.com)
+	command: get-mguser -userid "micdean@stcsolutions9.onmicrosoft.com"
+	command: get-mguser -userid "<user principal name>" | select *
+
+
+
+Configuring user properties @ https://learn.microsoft.com/en-us/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell?view=o365-worldwide
+
+- The user readwrite scope is needed for this (user.readwrite.all)
+
+
+assigning admin roles @ https://learn.microsoft.com/en-us/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide
+
+- The scope for this is the "rolemanagement.readwrite.directory"
+- The user's sign-in name (UPN) is used for admin role management
+- determine the role to be assigned, see roles @ https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference
+
+- I assigned the AI Administrator role to Mary @ mary@STCSOLUTIONS9.onmicrosoft.com
+
+userprincipal name = mary@STCSOLUTIONS9.onmicrosoft.com
+Admin role = AI Administrator and Exchange Administrator (the commands were run twice
+
+below is the set of commands.
+-----------------------------------------------------------------------------------------------
+
+$userUPN="mary@STCSOLUTIONS9.onmicrosoft.com"
+$roleName="Global Administrator"
+$role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+    $roleTemplate = (Get-MgDirectoryRoleTemplate | Where-Object {$_.displayName -eq $roleName}).id
+    New-MgDirectoryRole -DisplayName $roleName -RoleTemplateId $roleTemplate
+    $role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
+}
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
+$newRoleMember =@{
+    "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+    }
+New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
+
+-----------------------------------------------------------------------------------------------------
+
+i checked the list of users having a specific admin role assigned with (note, you need "Directory.Read.All");
+
+Connect-MgGraph -Scopes "Directory.Read.All" - nowelcome
+
+------------------------------------------------------------------------
+
+$roleName="Exchange Administrator"
+Get-MgDirectoryRole | Where-Object { $_.DisplayName -eq $roleName } | ForEach-Object { Get-MgDirectoryRoleMember -DirectoryRoleId $_.Id }
+
+-------------------------------------------------------------------------
