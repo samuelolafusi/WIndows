@@ -1,0 +1,64 @@
+https://support.microsoft.com/en-us/office/command-line-switches-for-microsoft-office-products-079164cd-4ef5-4178-b235-441737deb3a6#category=word
+
+Outlook
+
+- I practiced troubleshooting on Outlook, removing, repairing, and uninstalling plugins
+
+- I started Outlook in safe mode, using the command switch, to start Outlook in its bare form
+	outlook.exe /safe
+
+- I managed add-ins by;
+	outlook -> file -> options -> add-ins -> manage add-ins, go -> uncheck/recheck -> ok
+	uninstall, reinstall, repair, remove add-ins
+
+- I also tried removing (not deleting) the user's Outlook file from the Outlook directory
+	Outlook -> file -> info -> account setup -> account setup -> data -> open file location.
+	control panel -> large icons -> mail -> data files -> open file location 
+
+- I also worked on removing the user's profile through mail in the control panel. 
+- This could affect the user preferences and cached data; it is advised to back up the file, as in the previous step.
+	control panel -> large icons -> mail -> profile -> remove
+
+- One could also add a new profile to test if the existing profile is corrupted or not, input the profile name, and the email account details.
+	control panel -> large icons -> mail -> profile -> add
+
+
+Excel
+
+- I started Excel in safemode (Forces Excel to bypass all files/add-ins that are stored in startup directories) by;
+	run -> excel.exe /s or /safemode
+
+- I managed add-ins by;
+	excel -> file -> options -> add-ins -> manage add-ins, go -> uncheck/recheck -> ok
+
+- If Excel is working on its own, but a particular file that was opened some time ago is no longer opening, use the previous versions of Excel files by
+	right-click on the file -> properties -> previous versions -> open/restore
+
+- If the file is opening, but on clicking a tab, it crashes, the move or copy feature for sheets could work.
+This would create a copy of that sheet and into a new file (book)
+	open the file -> right-click on the sheet -> move or copy -> "move selected sheets", select new book, check "create a copy"
+
+- Another way to repair a book is to use the open and repair feature of Excel.
+	excel -> file -> open other workbooks -> browse -> click once on the bad file (don't double click) -> under the open drop down on the right, select "open and repair" -> click repair.
+
+- An autosave version of the file could be in the autosave directory; 
+	appdata -> roaming -> Microsoft -> Excel (if the file is available, just copy)
+	The XLSTART folder represents the user's preferences for Excel
+
+
+Word
+
+- I started Word in safe mode by;
+	run -> winword /safe
+
+- I managed add-ins by;
+	word -> file -> options -> add-ins -> manage add-ins, go -> uncheck/recheck -> ok
+
+- I started Word to prevent add-ins and global templates from being loaded automatically
+	run -> winword /a
+
+- I started word with no document open by;
+	run -> winword /n
+
+- I started work to re-register in the Windows registry by;
+	run -> winword /r
