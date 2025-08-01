@@ -10,5 +10,3 @@ Microsoft 365 Admin center (Users, all types groups, guest user, resourses, shar
 Microsoft Graph Powershell.<br>
 Exchange Admin Center.<br>
 Sharepoint Admin Centre.<br>
-
-I will keep updating this readme file, as i work more.<br>
