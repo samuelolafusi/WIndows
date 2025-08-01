@@ -1,5 +1,5 @@
 # WIndows Projects<br>
-Server 2016, Win 10/11 installation on VMware Workstation..<br>
+Server 2016, Win 10/11 installations.<br>
 Networking.<br>
 Active Directory, Domain management, User, Groups (security and distribution), GPOs.<br>
 DNS, DHCP Services on Server 2016.<br>
