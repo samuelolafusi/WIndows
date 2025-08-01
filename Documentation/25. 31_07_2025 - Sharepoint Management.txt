@@ -1,0 +1,26 @@
+- Team site: a SharePoint site suited for a team/group of people; people in this team can collaborate/contribute content freely. The team site is usually for specific people/projects. information is limited to team members.
+- Communication site: suited for a wider audience, here, only a few members contribute content, while the large audience consumes the content. few content authors and many site visitors.
+
+- I created a team site for the IT department in the SharePoint admin center
+	- Set the group/site email address as itdept@stcsolutions9.onmicrosoft.com
+	- Set the site as private.
+	- Added group members and selected two members as owners.
+	- Edited group memberships/permissions after creation
+	- managed site permissions and site sharing settings
+	- Used advanced permission settings to invite users, grant permissions, and check users' permissions.
+	- Sent test emails to the site mail, and it was received by the users in the team.
+
+
+- I created a communication site for the company in SharePoint admin center, named The News Stand, email - stcnews@stcsolution9.onmircosoft.com
+	- Added the allcompany group (this group contains all users in the company) to the site as visitors, Set permission for allcompany to read only
+	- added another user as a site owner and set the permission as full control
+	- shared the link to other users, setting the permission to view only
+
+Team site adds as a group in M365 and also an accessible mailbox in Outlook, settings can be edited in admin center in active groups
+
+The communication site does not add as a group or create an Outlook mailbox; it can be viewed in the admin center under Resources -> Sites
+
+All sites are managed in the SharePoint admin center
+
+- Managed sharing policies and access control policies in the admin center
+- managed settings, allowing users to create SharePoint sites, set storage limits manually in SharePoint and OneDrive, and set sync settings
