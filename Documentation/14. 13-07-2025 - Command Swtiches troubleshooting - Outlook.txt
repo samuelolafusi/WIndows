@@ -1,8 +1,10 @@
-- Set up of a free trial Microsoft 365 E5 subscription for learning.
+- Set up a free trial Microsoft 365 E5 subscription for learning.
 
 - Practised and solved issues with Command-line switches @ https://support.microsoft.com/en-us/office/command-line-switches-for-microsoft-office-products-079164cd-4ef5-4178-b235-441737deb3a6#ID0EAABAAA=&category=outlook
 
-- Used the run dialog with switching commands to launch Outlook in different states, the tested switches are:
+Quick solution - Use OWA - Outlook Web App for the time being.
+
+- Used the run dialog with switching commands to launch Outlook in different states. The tested switches are:
 
 	- outlook.exe /a "d:\linux.py", I used this open outlook from run, to create a new mail item and attach linux.py
 

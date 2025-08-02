@@ -2,10 +2,12 @@ https://support.microsoft.com/en-us/office/command-line-switches-for-microsoft-o
 
 Outlook
 
+Quick solution - Use OWA - Outlook Web App for the time being
+
 - I practiced troubleshooting on Outlook, removing, repairing, and uninstalling plugins
 
 - I started Outlook in safe mode, using the command switch, to start Outlook in its bare form
-	outlook.exe /safe
+	outlook.exe /safe or hold Ctrl key down and launch Outlook
 
 - I managed add-ins by;
 	outlook -> file -> options -> add-ins -> manage add-ins, go -> uncheck/recheck -> ok
